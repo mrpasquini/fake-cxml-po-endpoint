@@ -7,8 +7,34 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<h1>FakeCxmlPoEndpoint</h1>
+	<p>This is probably way overkill, but I needed to test posting a cXML document to an HTTP Basic Auth protected URI.</p>
+	<strong>POs</strong>
+	<table>
+		<tr>
+			<th>HTTP Action</th>
+			<th>Path</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td class="strong">POST</td>
+			<td class="uri">/pos/accept</td>
+			<td>returns a sample PO cXML response (accepted)</td>
+		</tr>
+		<tr>
+			<td class="strong">POST</td>
+			<td class="uri">/pos/basic_auth</td>
+			<td>returns a sample PO cXML reponse requiring HTTP Basic Auth (user/secret)</td>
+		</tr>
+	</table>
+	<p>Basic Auth credentials are defaulted to user/secret</p>
+	<h2>To Do (maybe):</h2>
+	<ul>
+		<li>save inbound posts?</li>
+		<li>validate inbound cxml against dtd</li>
+		<li>output based on input</li>
+		<li>other objects?</li>
+	</ul>
+	GitHub: <a href="https://github.com/mrpasquini">@mrpasquini</a>
 </body>
 </html>

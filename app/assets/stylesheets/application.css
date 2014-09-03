@@ -5,3 +5,22 @@
  *= require_self
  *= require_tree . 
 */
+table {
+	border: solid black 1px;
+	text-align: left;
+}
+th {
+		text-align: center;
+}
+td {
+	border-top: solid gray 1px;
+	border-bottom: solid gray 1px;
+	padding: 0em .5em 0em .5em;
+}
+.strong {
+	font-weight: bold;
+	text-align: center;
+}
+.uri {
+	font-variant: small-caps;
+}
