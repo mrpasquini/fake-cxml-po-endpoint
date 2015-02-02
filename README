@@ -1,2 +1,2 @@
 FakeCxmlPoEndpoint
-Way overkill, but might expand it beyond the simple need of accepting a cXML POST with a successful response behind an HTTP Basic Auth protected endpoint
+Rewrite as Sinatra App. Probably never going to touch this again.
